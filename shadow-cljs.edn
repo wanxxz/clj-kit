@@ -1,0 +1,8 @@
+{:dev-http {3001 "resources/public"}
+
+ :builds
+ {:main
+  {:output-dir "resources/public/js"
+   :target :browser
+   :modules {:main {:init-fn clj-kit.web.pages.core/init}}
+   :devtools {:after-load clj-kit.web.pages.core/after-load}}}}

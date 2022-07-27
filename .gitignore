@@ -1,0 +1,16 @@
+/*
+
+!.gitignore
+
+!resources
+resources/*
+!resources/public
+resources/public/*
+!resources/public/index.html
+!resources/conf.edn
+!src
+!test
+
+!deps.edn
+!package.json
+!shadow-cljs.edn

@@ -1,0 +1,35 @@
+{:mvn/repos
+ {"clojars" {:url "https://clojars.org/repo"}
+  "central" {:url "https://repo1.maven.org/maven2/"}}
+
+ :paths ["src" "test" "resources"]
+
+ :deps
+ {org.clojure/clojure          {:mvn/version "1.11.1"}
+  org.clojure/data.json        {:mvn/version "2.4.0"}
+  io.pedestal/pedestal.service {:mvn/version "0.5.10"}
+  io.pedestal/pedestal.jetty   {:mvn/version "0.5.10"}
+  mount/mount                  {:mvn/version "0.1.16"}
+  cprop/cprop                  {:mvn/version "0.1.19"}
+  com.taoensso/timbre          {:mvn/version "5.2.1"}
+  com.fzakaria/slf4j-timbre    {:mvn/version "0.3.21"}
+  com.wsscode/pathom3          {:mvn/version "2022.05.19-alpha"}
+  bidi/bidi                    {:mvn/version "2.1.6"}
+  venantius/accountant         {:mvn/version "0.2.5"}
+  pez/clerk                    {:mvn/version "1.0.0"}
+  cjohansen/dumdom             {:mvn/version "2022.04.12"}
+  herb/herb                    {:mvn/version "0.10.1"}
+  datalevin/datalevin          {:mvn/version "0.6.15"}
+  com.cognitect/transit-clj    {:mvn/version "1.0.329"}}
+
+ :aliases
+ {:nrepl       {:extra-deps {nrepl/nrepl {:mvn/version "1.0.0-SNAPSHOT"}}
+                :main-opts  ["-m" "nrepl.cmdline"
+                             "-p" "5555"
+                             "-t" "nrepl.transport/tty"]}
+
+  :shadow-cljs {:extra-deps {thheller/shadow-cljs {:mvn/version "2.19.0"}}
+                :main-opts  ["-m" "shadow.cljs.devtools.cli"]}
+
+  :cljfmt      {:extra-deps {cljfmt/cljfmt {:mvn/version "0.8.2"}}
+                :main-opts  ["-m" "cljfmt.main" "fix"]}}}

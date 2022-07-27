@@ -1,0 +1,4 @@
+{:server   {:public "/public"
+            :port   3000}
+
+ :database {:path "/tmp/clj-kit/db"}}

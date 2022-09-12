@@ -23,7 +23,7 @@
   com.cognitect/transit-clj    {:mvn/version "1.0.329"}}
 
  :aliases
- {:nrepl       {:extra-deps {nrepl/nrepl {:mvn/version "1.0.0-SNAPSHOT"}}
+ {:nrepl       {:extra-deps {nrepl/nrepl {:mvn/version "1.0.0"}}
                 :main-opts  ["-m" "nrepl.cmdline"
                              "-p" "5555"
                              "-t" "nrepl.transport/tty"]}
